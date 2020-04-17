@@ -1,0 +1,25 @@
+entity Beacon {
+    contentName String,
+    contentType String,
+    content String,
+    contentDescription String
+}
+
+entity Guest {
+	phoneId String,
+    name String,
+    email String,
+}
+
+entity User {
+	name String,
+    username String,
+    email String,
+    password String,
+    passwordHash String,
+    provider Boolean,
+}
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}

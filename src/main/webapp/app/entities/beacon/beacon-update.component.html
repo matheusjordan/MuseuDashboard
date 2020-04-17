@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-beacon-heading" jhiTranslate="museuDashboardApp.beacon.home.createOrEditLabel">Create or edit a Beacon</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="museuDashboardApp.beacon.contentName" for="field_contentName">Content Name</label>
+                    <input type="text" class="form-control" name="contentName" id="field_contentName"
+                           formControlName="contentName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="museuDashboardApp.beacon.contentType" for="field_contentType">Content Type</label>
+                    <input type="text" class="form-control" name="contentType" id="field_contentType"
+                           formControlName="contentType"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="museuDashboardApp.beacon.content" for="field_content">Content</label>
+                    <input type="text" class="form-control" name="content" id="field_content"
+                           formControlName="content"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="museuDashboardApp.beacon.contentDescription" for="field_contentDescription">Content Description</label>
+                    <input type="text" class="form-control" name="contentDescription" id="field_contentDescription"
+                           formControlName="contentDescription"/>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

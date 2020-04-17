@@ -1,0 +1,25 @@
+{
+  "museuDashboardApp": {
+    "beacon": {
+      "home": {
+        "title": "Beacons",
+        "createLabel": "Create a new Beacon",
+        "createOrEditLabel": "Create or edit a Beacon",
+        "notFound": "No Beacons found"
+      },
+      "created": "A new Beacon is created with identifier {{ param }}",
+      "updated": "A Beacon is updated with identifier {{ param }}",
+      "deleted": "A Beacon is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Beacon {{ id }}?"
+      },
+      "detail": {
+        "title": "Beacon"
+      },
+      "contentName": "Content Name",
+      "contentType": "Content Type",
+      "content": "Content",
+      "contentDescription": "Content Description"
+    }
+  }
+}
