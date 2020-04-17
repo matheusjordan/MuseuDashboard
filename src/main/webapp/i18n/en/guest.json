@@ -1,0 +1,24 @@
+{
+  "museuDashboardApp": {
+    "guest": {
+      "home": {
+        "title": "Guests",
+        "createLabel": "Create a new Guest",
+        "createOrEditLabel": "Create or edit a Guest",
+        "notFound": "No Guests found"
+      },
+      "created": "A new Guest is created with identifier {{ param }}",
+      "updated": "A Guest is updated with identifier {{ param }}",
+      "deleted": "A Guest is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Guest {{ id }}?"
+      },
+      "detail": {
+        "title": "Guest"
+      },
+      "phoneId": "Phone Id",
+      "name": "Name",
+      "email": "Email"
+    }
+  }
+}
